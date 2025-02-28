@@ -7,7 +7,29 @@
 </head>
 <body>
    <script>
-    console.log("Hello World!")
+    function getComputerchoice() {
+        let rando = Math.floor(Math.random() * 3);
+        if (rando === 1) {
+            return "rock";
+        }else if (rando === 2) {
+            return "paper";
+        }else {
+            return "scissors"
+        }
+    }
+    const getHumanChoice = function() {
+        let answer = prompt("rock, paper, or scissors?")
+        if (answer === "rock") {
+            return "rock"
+        }
+        else if (answer === "paper") {
+            return "paper";
+        } else if (answer === "scissors") {
+            return "scissors";
+        }else {
+            return "Please enter your choice"
+        }
+    }
    </script> 
 </body>
 </html>
